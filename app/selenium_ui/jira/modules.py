@@ -126,6 +126,16 @@ def search_jql(webdriver, datasets):
     measure()
 
 
+def search_mentioned_jql(webdriver, datasets):
+    search_page = Search(webdriver, jql=datasets['custom_jql'])
+
+    @print_timing("selenium_search_mentioned_jql")
+    def measure():
+        search_page.go_to()
+        search_page.wait_for_page_loaded()
+    measure()
+
+
 def edit_issue(webdriver, datasets):
     issue_page = Issue(webdriver, issue_id=datasets['issue_id'])
 

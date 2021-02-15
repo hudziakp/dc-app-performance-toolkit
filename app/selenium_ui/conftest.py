@@ -17,7 +17,7 @@ from util.project_paths import JIRA_DATASET_ISSUES, JIRA_DATASET_JQLS, JIRA_DATA
     JIRA_DATASET_PROJECTS, JIRA_DATASET_SCRUM_BOARDS, JIRA_DATASET_USERS, JIRA_DATASET_CUSTOM_ISSUES, BITBUCKET_USERS, \
     BITBUCKET_PROJECTS, BITBUCKET_REPOS, BITBUCKET_PRS, CONFLUENCE_BLOGS, CONFLUENCE_PAGES, CONFLUENCE_CUSTOM_PAGES, \
     CONFLUENCE_USERS, ENV_TAURUS_ARTIFACT_DIR, JSM_DATASET_REQUESTS, JSM_DATASET_CUSTOMERS, JSM_DATASET_AGENTS, \
-    JSM_DATASET_SERVICE_DESKS_L, JSM_DATASET_SERVICE_DESKS_M, JSM_DATASET_SERVICE_DESKS_S, JSM_DATASET_CUSTOM_ISSUES
+    JSM_DATASET_SERVICE_DESKS_L, JSM_DATASET_SERVICE_DESKS_M, JSM_DATASET_SERVICE_DESKS_S, JSM_DATASET_CUSTOM_ISSUES, JIRA_DATASET_CUSTOM_JQLS
 
 SCREEN_WIDTH = 1920
 SCREEN_HEIGHT = 1080
@@ -43,6 +43,7 @@ class Dataset:
             self.dataset["issues"] = self.__read_input_file(JIRA_DATASET_ISSUES)
             self.dataset["users"] = self.__read_input_file(JIRA_DATASET_USERS)
             self.dataset["jqls"] = self.__read_input_file(JIRA_DATASET_JQLS)
+            self.dataset["custom_jqls"] = self.__read_input_file(JIRA_DATASET_CUSTOM_JQLS)
             self.dataset["scrum_boards"] = self.__read_input_file(JIRA_DATASET_SCRUM_BOARDS)
             self.dataset["kanban_boards"] = self.__read_input_file(JIRA_DATASET_KANBAN_BOARDS)
             self.dataset["projects"] = self.__read_input_file(JIRA_DATASET_PROJECTS)

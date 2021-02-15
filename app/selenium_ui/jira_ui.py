@@ -31,6 +31,10 @@ def test_1_selenium_search_jql(jira_webdriver, jira_datasets, jira_screen_shots)
     modules.search_jql(jira_webdriver, jira_datasets)
 
 
+def test_1_selenium_search_mentioned_jql(jira_webdriver, jira_datasets, jira_screen_shots):
+    modules.search_mentioned_jql(jira_webdriver, jira_datasets)
+
+
 def test_1_selenium_view_backlog_for_scrum_board(jira_webdriver, jira_datasets, jira_screen_shots):
     modules.view_backlog_for_scrum_board(jira_webdriver, jira_datasets)
 
