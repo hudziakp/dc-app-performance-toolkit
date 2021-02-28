@@ -127,7 +127,7 @@ def search_jql(webdriver, datasets):
 
 
 def search_mentioned_jql(webdriver, datasets):
-    search_page = Search(webdriver, jql=datasets['custom_jql'])
+    search_page = Search(webdriver, jql=datasets['custom_jqls'])
 
     @print_timing("selenium_search_mentioned_jql")
     def measure():

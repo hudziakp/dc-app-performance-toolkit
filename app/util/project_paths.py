@@ -68,7 +68,7 @@ def __get_taurus_artifacts_dir():
 JIRA_YML = __get_jira_yml()
 JIRA_DATASETS = __get_jira_datasets()
 JIRA_DATASET_JQLS = __get_jira_dataset('jqls.csv')
-JIRA_DATASET_CUSTOM_JQLS = __get_jira_dataset('custom_jqls.csv')
+JIRA_DATASET_CUSTOM_JQLS = __get_jira_dataset('custom-jqls.csv')
 JIRA_DATASET_SCRUM_BOARDS = __get_jira_dataset('scrum-boards.csv')
 JIRA_DATASET_KANBAN_BOARDS = __get_jira_dataset('kanban-boards.csv')
 JIRA_DATASET_USERS = __get_jira_dataset('users.csv')
