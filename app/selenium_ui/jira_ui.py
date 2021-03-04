@@ -27,6 +27,10 @@ def test_1_selenium_save_comment(jira_webdriver, jira_datasets, jira_screen_shot
     modules.save_comment(jira_webdriver, jira_datasets)
 
 
+def test_1_selenium_save_comment_with_mention(jira_webdriver, jira_datasets, jira_screen_shots):
+    extension_ui.save_comment_with_mention(jira_webdriver, jira_datasets)
+
+
 def test_1_selenium_search_jql(jira_webdriver, jira_datasets, jira_screen_shots):
     modules.search_jql(jira_webdriver, jira_datasets)
 

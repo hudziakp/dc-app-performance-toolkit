@@ -159,6 +159,13 @@ class Issue(BasePage):
         else:
             self.__fill_textfield(text, selector=IssueLocators.edit_comment_text_field)
 
+    def fill_comment_edit_with_mention(self, rte, user_name):
+        text = f'Comment mentioning [~{user_name}]'
+        if rte:
+            self.__fill_rich_editor_textfield(text, selector=IssueLocators.edit_comment_text_field_RTE)
+        else:
+            self.__fill_textfield(text, selector=IssueLocators.edit_comment_text_field)
+
     def edit_comment_submit(self):
         self.get_element(IssueLocators.edit_comment_add_comment_button).click()
         self.wait_until_visible(IssueLocators.issue_title)
