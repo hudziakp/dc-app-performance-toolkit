@@ -4,9 +4,9 @@ runs:
   # fullPath should contain a full path to the directory with run results. E.g. /home/$USER/dc-app-performance-toolkit/jira/results/2019-08-06_17-41-08
   - runName: "without app"
     runType: "baseline"
-    fullPath: "/Users/piotrhudziak/Atlassian-Projects/jiramentionedtests/Results/results/jira/2021-03-07_07-49-04"
+    fullPath: "/Users/piotrhudziak/Atlassian-Projects/jiramentionedtests/Results_2022_04_02/No2_withApp/reports/jira/2022-04-02_14-30-26"
   - runName: "with app"
-    fullPath: "/Users/piotrhudziak/Atlassian-Projects/jiramentionedtests/Results/results/jira/2021-03-07_09-37-16"
+    fullPath: "/Users/piotrhudziak/Atlassian-Projects/jiramentionedtests/Results_2022_04_02/No2_withApp/reports/jira/2022-04-02_16-14-00"
     runType: "experiment"
 
 # Chart generation config
