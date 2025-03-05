@@ -4,9 +4,9 @@ from selenium.webdriver.common.by import By
 
 from selenium_ui.base_page import BasePage
 from selenium_ui.conftest import print_timing
+from selenium_ui.jira.pages.pages import Login, AdminPage
 from selenium_ui.jira.modules import rte_status
 from selenium_ui.jira.pages.pages import Issue
-from selenium_ui.jira.pages.pages import Login
 from util.conf import JIRA_SETTINGS
 
 
@@ -25,12 +25,17 @@ def app_specific_action(webdriver, datasets):
     #         login_page = Login(webdriver)
     #         login_page.delete_all_cookies()
     #         login_page.go_to()
+    #         login_page.wait_for_login_page_loaded()
     #         login_page.set_credentials(username=username, password=password)
+    #         login_page.wait_for_dashboard_or_first_login_loaded()
     #         if login_page.is_first_login():
     #             login_page.first_login_setup()
     #         if login_page.is_first_login_second_page():
     #             login_page.first_login_second_page_setup()
     #         login_page.wait_for_page_loaded()
+    #         # uncomment below line to do web_sudo and authorise access to admin pages
+    #         # AdminPage(webdriver).go_to(password=password)
+    #
     #     app_specific_user_login(username='admin', password='admin')
     # measure()
 
@@ -66,6 +71,5 @@ def save_comment_with_mention(webdriver, datasets):
             issue_page.edit_comment_submit()  # Submit comment
 
         sub_measure()
-
     measure()
 
