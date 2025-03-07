@@ -51,6 +51,7 @@ class Dataset:
                 JIRA_DATASET_ISSUES)
             self.dataset["users"] = self.__read_input_file(JIRA_DATASET_USERS)
             self.dataset["jqls"] = self.__read_input_file(JIRA_DATASET_JQLS)
+            self.dataset["custom_jqls"] = self.__read_input_file(JIRA_DATASET_CUSTOM_JQLS)
             self.dataset["scrum_boards"] = self.__read_input_file(
                 JIRA_DATASET_SCRUM_BOARDS)
             self.dataset["kanban_boards"] = self.__read_input_file(
@@ -59,10 +60,6 @@ class Dataset:
                 JIRA_DATASET_PROJECTS)
             self.dataset["custom_issues"] = self.__read_input_file(
                 JIRA_DATASET_CUSTOM_ISSUES)
-            self.dataset["custom_jqls"] = self.__read_input_file(JIRA_DATASET_CUSTOM_JQLS)
-            self.dataset["kanban_boards"] = self.__read_input_file(JIRA_DATASET_KANBAN_BOARDS)
-            self.dataset["projects"] = self.__read_input_file(JIRA_DATASET_PROJECTS)
-            self.dataset["custom_issues"] = self.__read_input_file(JIRA_DATASET_CUSTOM_ISSUES)
         return self.dataset
 
     def jsm_dataset(self):
