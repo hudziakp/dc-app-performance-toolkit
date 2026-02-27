@@ -7645,8 +7645,6 @@ prev.setIgnore()</stringProp>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET   /rest/user-mentioned/1.0/dashboard/replied-stat/">
                 <stringProp name="HTTPSampler.path">${application.postfix}/rest/user-mentioned/1.0/dashboard/replied-stat/</stringProp>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /app/post_endpoint">
-                <stringProp name="HTTPSampler.path">${application.postfix}/app/post_endpoint</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
                 <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
